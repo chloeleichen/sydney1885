@@ -3,3 +3,9 @@
   <input ng-model='place' id="search" type="text" class="field block">
   <button class="btn btn-primary mt2">Go</button>
 </form>
+
+<ul class="list-reset flex flex-wrap">
+<li class="img-wrapper" ng-repeat ="img in imgs">
+<img src="assets/img/blank.png" alt="Photo" data-echo="{{img.thumbnaillink}}">
+</li>
+</ul> <!-- img list -->

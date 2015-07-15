@@ -1,5 +1,5 @@
-var oldSydney = angular.module('oldSydney', ['ngRoute', 'appControllers']);
-var appControllers = angular.module('appControllers', []);
+var oldSydney = angular.module('oldSydney', ['ngRoute', 'firebase','appControllers']);
+var appControllers = angular.module('appControllers', ['firebase']);
 
 oldSydney.config(['$routeProvider', function($routeProvider){
   $routeProvider.

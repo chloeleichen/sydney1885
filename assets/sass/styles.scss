@@ -1,0 +1,11 @@
+.img-wrapper{
+  width: 160px;
+  height: 100px;
+  overflow: hidden;
+  display: block;
+  img{
+    padding: 0.5em;
+    width: 100%;
+    height: auto;
+  }
+}
