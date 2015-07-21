@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
 $item-width: 180px;
 
 .photo-item{
@@ -11,19 +12,6 @@ $item-width: 180px;
 
   }
 
-  figcaption{
-    padding: 100px 1rem 0;
-    overflow: hidden;
-    font-size: 0.8em;
-
-    p{
-      overflow: hidden;
-      height: 72px;
-      margin: 1rem 0;
-    }
-  }
-
-}
   img{
     position: absolute;
     clip: rect(0px,$item-width,100px,0px);
@@ -31,4 +19,27 @@ $item-width: 180px;
     width: auto;
     min-height: 100px;
   }
+
+  figcaption{
+    padding: 100px 1rem 0;
+    overflow: hidden;
+    p{
+      font-family: 'Rokkitt', serif;
+      overflow: hidden;
+      height: 72px;
+      margin: 1rem 0;
+      font-size: 0.8rem;
+      line-height: 1.1;
+    }
+  }
+
+}
+
+
+#map-canvas {
+      height: 500px;
+      width: 90%;
+      margin: 0;
+      padding: 0;
+    }
 

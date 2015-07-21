@@ -1,11 +1,12 @@
-<form name='searchForm' class='m2'>
+<!-- <form name='searchForm' class='m2'>
   <label for="search">Looking in... {{place}}</label>
   <input ng-model='place' id="search" type="text" class="field block">
   <button class="btn btn-primary mt2">Go</button>
-</form>
-
+</form> -->
+<div id ='map-canvas'></div>
+<div>{{selectedMarker}}}</div>
 <ul class="list-reset flex flex-wrap">
-<li class="photo-item"ng-repeat ="img in imgs | filter:{caption: place}">
+<li class="photo-item" ng-repeat ="img in imgs | filter:{caption: selectedMarker}">
   <figure class='border'>
   <img src="{{img.thumbnaillink}}" alt="Photo" data-echo="{{img.thumbnaillink}}">
   <figcaption><p>{{img.caption}}</p></figcaption>
