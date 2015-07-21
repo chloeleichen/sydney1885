@@ -5,7 +5,10 @@
 </form>
 
 <ul class="list-reset flex flex-wrap">
-<li class="img-wrapper" ng-repeat ="img in imgs">
-<img src="assets/img/blank.png" alt="Photo" data-echo="{{img.thumbnaillink}}">
+<li class="photo-item"ng-repeat ="img in imgs | filter:{caption: place}">
+  <figure class='border'>
+  <img src="{{img.thumbnaillink}}" alt="Photo" data-echo="{{img.thumbnaillink}}">
+  <figcaption><p>{{img.caption}}</p></figcaption>
+</figure>
 </li>
 </ul> <!-- img list -->

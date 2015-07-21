@@ -10,12 +10,12 @@ oldSydney.controller("mainController", ["$scope", "$firebaseArray",
     var ref = new Firebase('https://oldsydney.firebaseio.com');
     $scope.imgs = $firebaseArray(ref);
     //Code here
-    $scope.$on('$viewContentLoaded', function load(){
-      echo.init({
-        offset: 0,
-        throttle: 250,
-        unload: false
-      });
-     });
+    // $scope.$on('$viewContentLoaded', function load(){
+    //   echo.init({
+    //     offset: 0,
+    //     throttle: 250,
+    //     unload: false
+    //   });
+    //  });
   }
 ]);
