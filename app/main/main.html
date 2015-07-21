@@ -3,8 +3,11 @@
   <input ng-model='place' id="search" type="text" class="field block">
   <button class="btn btn-primary mt2">Go</button>
 </form> -->
-<div id ='map-canvas'></div>
-<div>{{selectedMarker}}}</div>
+<map zoom="15" center="-33.867487, 151.206990">
+  <marker title ="George Street" position="-33.870593, 151.206939" on-click="click()"></marker>
+  <marker title ="Fitzroy Dock" position="-33.848574, 151.172859" on-click="click()"></marker>
+  <marker title ="Hyde Park" position="-33.873138, 151.211276" on-click="click()"></marker>
+</map>
 <ul class="list-reset flex flex-wrap">
 <li class="photo-item" ng-repeat ="img in imgs | filter:{caption: selectedMarker}">
   <figure class='border'>
