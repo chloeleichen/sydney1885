@@ -1,32 +1,75 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@media (min-width: 40em) {
+  .photo-wrapper {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden; } }
+
 .photo-item {
-  width: 180px;
-  padding: 0.5rem; }
+  padding: 0 0.5rem 1rem 0.5rem; }
   .photo-item figure {
     margin: 0;
     padding: 0;
     position: relative; }
-  .photo-item img {
-    position: absolute;
-    clip: rect(0px, 180px, 100px, 0px);
-    min-width: 100%;
-    width: auto;
-    min-height: 100px; }
-  .photo-item figcaption {
-    padding: 100px 1rem 0;
+  .photo-item figcaption p {
+    font-family: "Rokkitt", serif;
+    overflow: hidden;
+    height: 40px;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.1; }
+  .photo-item .img-wrapper {
+    height: 120px;
     overflow: hidden; }
-    .photo-item figcaption p {
-      font-family: 'Rokkitt', serif;
-      overflow: hidden;
-      height: 72px;
-      margin: 1rem 0;
-      font-size: 0.8rem;
-      line-height: 1.1; }
+  .photo-item img {
+    min-width: 100%;
+    height: auto;
+    min-height: 100%; }
+
+.map-wrapper {
+  padding: 0 0.5rem; }
 
 map {
-  height: 500px;
-  width: 90%;
+  height: calc(100vh - 100px);
+  width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 2px solid #f0f0f0; }
+
+.lightbox {
+  position: fixed;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.7); }
+  .lightbox.open {
+    display: block; }
+  .lightbox figure {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 90vw;
+    display: block;
+    margin: auto; }
+  .lightbox img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 80vh; }
+  .lightbox .close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem; }
+  .lightbox figcaption {
+    font-family: "Rokkitt", serif;
+    color: #fff;
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
