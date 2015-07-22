@@ -15,7 +15,10 @@
       //   });
       //  });
 
-    var map, infoWindow;
+    var map, infoWindow, lightboxImg;
+
+    lightboxImg = document.getElementById('lightbox-img');
+
     $scope.$on('mapInitialized', function(evt, evtMap) {
       map = evtMap;
     });
@@ -67,7 +70,7 @@
 
     $scope.toggleClick = function(){
       toggleClass();
-      $scope.lightbox = {};
+      lightboxImg.src = 'assets/img/blank.svg';   
     }
   }
 ]);
