@@ -1,16 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt);
-@media (min-width: 40em) {
-  .photo-wrapper {
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    overflow-x: hidden; } }
+body {
+  background-image: url(../img/background.jpg);
+  background-positon: fixed; }
+
+.photo-wrapper {
+  float: right; }
+
+.map-wrapper {
+  padding: 0 0.5rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 40em) {
+    .map-wrapper {
+      position: fixed;
+      left: 0;
+      padding: 0 1rem 0 3rem; } }
 
 .photo-item {
   padding: 0 0.5rem 1rem 0.5rem; }
   .photo-item figure {
     margin: 0;
     padding: 0;
-    position: relative; }
+    position: relative;
+    background: #fff; }
   .photo-item figcaption p {
     font-family: "Rokkitt", serif;
     overflow: hidden;
@@ -26,11 +37,8 @@
     height: auto;
     min-height: 100%; }
 
-.map-wrapper {
-  padding: 0 0.5rem; }
-
 map {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 90px);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -71,5 +79,67 @@ map {
     font-family: "Rokkitt", serif;
     color: #fff;
     text-align: center; }
+
+.loading map, .loading .photo-wrapper ul {
+  opacity: 0; }
+.loading .pre-loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000; }
+  .loading .pre-loader img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.loaded map, .loaded .photo-wrapper ul {
+  opacity: 1;
+  -moz-transition: opacity, 0.5s ease-in;
+  -o-transition: opacity, 0.5s ease-in;
+  -webkit-transition: opacity, 0.5s ease-in;
+  transition: opacity, 0.5s ease-in; }
+.loaded .pre-loader {
+  display: none; }
+
+header {
+  padding: 0rem 3rem 0rem 3rem; }
+  header ul {
+    overflow: hidden;
+    margin: 0;
+    -moz-transition: all, 0.25s linear;
+    -o-transition: all, 0.25s linear;
+    -webkit-transition: all, 0.25s linear;
+    transition: all, 0.25s linear; }
+  header li a {
+    color: #fff;
+    display: block;
+    padding: 0 1rem 10px 0;
+    font-family: "Rokkitt", serif; }
+
+.nav-toggle {
+  cursor: pointer;
+  padding-left: 0; }
+  .nav-toggle i {
+    font-size: 2rem; }
+
+.nav-close ul {
+  max-height: 0;
+  opacity: 0; }
+
+.nav-open ul {
+  max-height: 1000px;
+  opacity: 1; }
+
+main {
+  min-height: calc(100vh - 90px); }
+  main h1 {
+    margin-top: 0;
+    padding-top: 1rem; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,17 +6,11 @@
       var ref = new Firebase('https://oldsydney.firebaseio.com');
       $scope.imgs = $firebaseArray(ref);
       $scope.lClass = 'close';
-      //lazy load images
-      // $scope.$on('$viewContentLoaded', function load(){
-      //   echo.init({
-      //     offset: 0,
-      //     throttle: 250,
-      //     unload: false
-      //   });
-      //  });
-
+      $scope.loadState = 'loading';
+    $scope.imgs.$loaded(function(event){
+      $scope.loadState = 'loaded';
+    });
     var map, infoWindow, lightboxImg;
-
     lightboxImg = document.getElementById('lightbox-img');
 
     $scope.$on('mapInitialized', function(evt, evtMap) {
@@ -40,7 +34,68 @@
       {
         title: 'Oxford Street',
         position: [-33.887304, 151.230648]
+      },
+      {
+        title: 'Pitt Street',
+        position: [-33.881372, 151.206239]
+      },
+      {
+        title: 'Circular Quay',
+        position: [-33.861858, 151.210546]
+      },
+      {
+        title: 'Newtown',
+        position: [-33.898715, 151.180981]
+      },
+      {
+        title: 'North Head',
+        position: [-33.820894, 151.298984]
+      },
+      {
+        title: 'Manly',
+        position: [-33.798521, 151.28612]
+      },
+      {
+        title: 'Darling Harbour',
+        position: [-33.871114, 151.199042]
+      },
+      {
+        title: 'Coogee Bay',
+        position: [-33.925156, 151.252112]
+      },
+      {
+        title: 'Barrack Street',
+        position: [-33.867676, 151.205906]
+      },
+      {
+        title: 'Mosman',
+        position: [-33.841778, 151.231373]
+      },
+      {
+        title: 'North Sydney',
+        position: [-33.838634, 151.207114]
+      },
+      {
+        title: 'HayMarket',
+        position: [-33.879193, 151.20339]
+      },
+      {
+        title: 'Balmain',
+        position: [-33.857550, 151.181043]
+      },
+      {
+        title: 'Hillside',
+        position: [-33.601551, 151.007816]
+      },
+      {
+        title: 'Cleveland',
+        position: [-33.889948, 151.207894]
+      },
+      {
+        title: 'Pyrmont',
+        position: [-33.869546, 151.19454]
       }
+       
     ];
 
     $scope.markerClick = function(event) {
@@ -71,6 +126,10 @@
     $scope.toggleClick = function(){
       toggleClass();
       lightboxImg.src = 'assets/img/blank.svg';   
+    }
+
+    $scope.reset = function(){
+      $scope.selectedMarker = '';
     }
   }
 ]);

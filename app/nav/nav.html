@@ -1,5 +1,9 @@
-  <div class="sm-col">
-    <a ng-href="#/" class="btn py2">OLD SYDNEY</a>
-    <a ng-href="#/about" class="btn py2">About</a>
-    <a ng-href="#/contact" class="btn py2">Contact</a>
-  </div>
+  <nav class="{{navState}}">
+    <a ng-click ="navToggle()" class="btn white nav-toggle"> <i class="icon-menu"></i> </a>
+    <ul class="clearfix list-reset flex flex-wrap">
+      <li><a ng-click ="navToggle()" ng-href="#/" class="nav-item">Home</a></li>
+      <li><a ng-click ="navToggle()" ng-href="#/about" class="nav-item">About</a></li>
+      <li><a ng-click ="navToggle()" ng-href="#/contact" class="nav-item">Contact</a></li>
+    </ul>
+  </nav>
+
