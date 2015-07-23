@@ -7,8 +7,7 @@ body {
   float: right; }
 
 .map-wrapper {
-  padding: 0 0.5rem;
-  margin-bottom: 3rem; }
+  padding: 0 0.5rem; }
   @media (min-width: 40em) {
     .map-wrapper {
       position: fixed;
@@ -38,11 +37,16 @@ body {
     min-height: 100%; }
 
 map {
-  height: calc(100vh - 90px);
+  height: 200px;
   width: 100%;
   margin: 0;
+  margin-bottom: 1rem;
   padding: 0;
   border: 2px solid #f0f0f0; }
+  @media (min-width: 40em) {
+    map {
+      height: calc(100vh - 90px);
+      margin-bottom: 3rem; } }
 
 .lightbox {
   position: fixed;

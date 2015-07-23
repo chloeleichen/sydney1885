@@ -27,7 +27,6 @@ body{
 }
 .map-wrapper{
   padding: 0 0.5rem;
-  margin-bottom: 3rem;
     @media (min-width: 40em){
       position: fixed;
       left: 0;
@@ -73,13 +72,18 @@ body{
 
 
 map {
-
-      height: $height;
+  @media (min-width: 40em){
+    height: $height;
+    margin-bottom: 3rem;
+  }
+      height: 200px;
       width: 100%;
       margin: 0;
+      margin-bottom: 1rem;
       padding: 0;
       border: 2px solid #f0f0f0;
     }
+
 .lightbox{
   position: fixed;
   -webkit-transform-style: preserve-3d;
