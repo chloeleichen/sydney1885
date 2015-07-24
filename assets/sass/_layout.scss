@@ -1,0 +1,28 @@
+body{
+  background-image: url(../img/vintage.jpg);
+  background-repeat: repeat;
+}
+
+main {
+  min-height: $height;
+  @media (min-width: $sm){
+  margin-top: $header;
+  }
+  h1{
+    margin-top: 0;
+    padding-top: 1rem;
+  }
+}
+
+
+.photo-wrapper{
+  float: right;
+}
+.map-wrapper{
+  padding: 0 0.5rem;
+    @media (min-width: $sm){
+      position: fixed;
+      left: 0;
+      padding: 0 1rem 0 3rem;
+    }
+}

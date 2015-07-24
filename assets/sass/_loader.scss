@@ -1,0 +1,28 @@
+.loading{
+  map, .photo-wrapper ul{
+    opacity: 0;
+  }
+  .pre-loader{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #000;
+      img{
+        display: block;
+        margin: 0 auto;
+        @include vertical-align;
+      }
+    }
+}
+
+.loaded{
+  map, .photo-wrapper ul{
+    opacity: 1;
+    @include transition(opacity, 0.5s ease-in);
+  }
+  .pre-loader{
+      display: none;
+  }
+}

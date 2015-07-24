@@ -1,204 +1,22 @@
-@import url(http://fonts.googleapis.com/css?family=Rokkitt);
-$height: calc(100vh - 90px);
-
-$font-serif: 'Rokkitt', serif;
-
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-@mixin transition($transition...) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
-}
-
-body{
-  background-image: url(../img/background.jpg);
-  background-positon: fixed;
-}
-.photo-wrapper{
-  float: right;
-
-}
-.map-wrapper{
-  padding: 0 0.5rem;
-    @media (min-width: 40em){
-      position: fixed;
-      left: 0;
-      padding: 0 1rem 0 3rem;
-    }
-}
-
-.photo-item{
-  padding: 0 0.5rem 1rem 0.5rem;
-
-
-  figure{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background: #fff;
-
-  }
-
-  figcaption{
-   p{
-      font-family: $font-serif;
-      overflow: hidden;
-      height: 40px;
-      margin: 0.5rem;
-      font-size: 0.8rem;
-      line-height: 1.1;
-    }
-}
-
-.img-wrapper{
-  height: 120px;
-  overflow: hidden;
-}
-
-  img{
-    min-width: 100%;
-    height: auto;
-    min-height: 100%;
-  }
-}
+@import "global";
+@import "layout";
+@import "header";
+@import "map";
+@import "photos";
+@import "lightbox";
+@import "loader";
 
 
 
-map {
-  @media (min-width: 40em){
-    height: $height;
-    margin-bottom: 3rem;
-  }
-      height: 200px;
-      width: 100%;
-      margin: 0;
-      margin-bottom: 1rem;
-      padding: 0;
-      border: 2px solid #f0f0f0;
-    }
-
-.lightbox{
-  position: fixed;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  display: none;
-  background: rgba(0,0,0, 0.7);
-
-  &.open{
-    display: block;
-  }
-
-  figure{
-    @include vertical-align;
-    max-width: 90vw;
-    display: block;
-    margin: auto; 
-    }
-  img{
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 80vh;
-  }
-  .close{
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-  }
-  figcaption{
-    font-family: $font-serif;
-    color: #fff;
-    text-align: center;
-    }
-}
 
 
-.loading{
-  map, .photo-wrapper ul{
-    opacity: 0;
-    
-  }
-  .pre-loader{
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: #000;
-      img{
-        display: block;
-        margin: 0 auto;
-        @include vertical-align;
-      }
-    }
-}
 
-.loaded{
-  map, .photo-wrapper ul{
-    opacity: 1;
-    @include transition(opacity, 0.5s ease-in);
-  }
-  .pre-loader{
-      display: none;
-  }
-}
 
-header{
-  padding: 0rem 3rem 0rem 3rem;
-  ul{
-    overflow: hidden;
-    margin: 0;
-    @include transition(all, 0.25s linear);
-  }
-  li{
-    a{
-      color: #fff;
-      display: block;
-      padding: 0 1rem 10px 0;
-      font-family: $font-serif;
-    }
-  }
-}
 
-.nav-toggle{
-  cursor: pointer;
-  padding-left: 0;
-  i{
-    font-size: 2rem;
-  }
-}
 
-.nav-close{
-  ul{
-    max-height: 0;
-    opacity: 0;
-  }
-}
 
-.nav-open{
-  ul{
-    max-height: 1000px;
-    opacity: 1;
-  }
-}
 
-main {
-  min-height: $height;
-  h1{
-    margin-top: 0;
-    padding-top: 1rem;
-  }
-}
+
+
+
 

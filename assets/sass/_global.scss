@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+$header: 4rem;
+$height: calc(100vh - 8rem);
+$font-serif: 'Rokkitt', serif;
+$sm: 40em;
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}

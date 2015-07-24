@@ -1,23 +1,24 @@
-  oldSydney.controller("mainController", 
+  oldSydney.controller("mainController",
     ["$scope",
     "$filter",
-    "$firebaseArray", 
+    "$firebaseArray",
     function($scope, $filter, $firebaseArray) {
       var ref = new Firebase('https://oldsydney.firebaseio.com');
+      var map, infoWindow, lightboxImg;
+      lightboxImg = document.getElementById('lightbox-img');
+      infoWindow = new google.maps.InfoWindow();
       $scope.imgs = $firebaseArray(ref);
       $scope.lClass = 'close';
       $scope.loadState = 'loading';
+
     $scope.imgs.$loaded(function(event){
       $scope.loadState = 'loaded';
     });
-    var map, infoWindow, lightboxImg;
-    lightboxImg = document.getElementById('lightbox-img');
 
     $scope.$on('mapInitialized', function(evt, evtMap) {
       map = evtMap;
     });
 
-    var infoWindow = new google.maps.InfoWindow();
     $scope.markers = [
       {
         title: "George Street",
@@ -95,7 +96,7 @@
         title: 'Pyrmont',
         position: [-33.869546, 151.19454]
       }
-       
+
     ];
 
     $scope.markerClick = function(event) {
@@ -117,15 +118,15 @@
         img: this.img.highreslink,
         caption: this.img.caption
       }
-      toggleClass(); 
+      toggleClass();
       var delay = setTimeout(function(){
         echo.init();
-      }, 0);  
+      }, 0);
     }
 
     $scope.toggleClick = function(){
       toggleClass();
-      lightboxImg.src = 'assets/img/blank.svg';   
+      lightboxImg.src = 'assets/img/blank.svg';
     }
 
     $scope.reset = function(){

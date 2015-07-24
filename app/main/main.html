@@ -1,7 +1,7 @@
 <div class="clearfix black {{loadState}}">
   <div class="map-wrapper sm-col sm-col-6">
-    <map zoom="12" center="-33.870593, 151.206939"> 
-      <marker ng-repeat ="marker in markers" title ="{{marker.title}}" position="{{marker.position}}" on-click="markerClick()" >
+    <map zoom="12" center="-33.870593, 151.206939">
+      <marker ng-repeat ="marker in markers" title ="{{marker.title}}" position="{{marker.position}}" on-click="markerClick()">
       </marker>
     </map>
   </div>
@@ -21,7 +21,7 @@
     <button ng-click ="reset()" class='btn btn-outline white'> Reset </button>
     </div>
   </div>
-</div> 
+</div>
 <!-- end of clearfix-->
 <div class= 'lightbox {{lClass}}'>
   <figure>

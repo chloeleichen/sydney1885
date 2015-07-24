@@ -1,0 +1,33 @@
+.photo-item{
+  padding: 0 0.5rem 1rem 0.5rem;
+  figure{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+
+  }
+
+  figcaption{
+   p{
+      font-family: $font-serif;
+      overflow: hidden;
+      height: 40px;
+      margin: 0.5rem;
+      font-size: 0.8rem;
+      line-height: 1.1;
+    }
+}
+
+.img-wrapper{
+  height: 120px;
+  overflow: hidden;
+}
+
+  img{
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+}
