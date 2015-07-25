@@ -12,5 +12,10 @@
 
 .ins-map{
   left: 50%;
+  top: 0;
+  @media (min-width: $sm){
+    top: -4rem;
+  }
+
 }
 
