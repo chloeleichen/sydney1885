@@ -8,7 +8,8 @@ This project is built with Angular under MIT License
 
 ### Data and cppyright of the photos
 
-This web app uses part of a photo collection by the [State Library of New South Wales](http://data.gov.au/organization/about/statelibraryofnewsouthwales) called [Photographs of Sydney before 1885](http://data.gov.au/dataset/photographs-of-sydney-before-1885). The collection contains over one thousand photographs of Sydney streets, public buildings, views of the Harbour, suburbs etc., chiefly pre 1885. For this project I selected part of the collection that are clearly dated and can be attributed to an author/authors. 
+This web app uses part of a photo collection by the [State Library of New South Wales](http://data.gov.au/organization/about/statelibraryofnewsouthwales) called [Photographs of Sydney before 1885](http://data.gov.au/dataset/photographs-of-sydney-before-1885). 
+> The collection contains over one thousand photographs of Sydney streets, public buildings, views of the Harbour, suburbs etc., chiefly pre 1885. For this project I selected part of the collection that are clearly dated and can be attributed to an author/authors. 
 
 
 Author: 
