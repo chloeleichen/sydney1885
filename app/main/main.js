@@ -95,6 +95,34 @@
       {
         title: 'Pyrmont',
         position: [-33.869546, 151.19454]
+      },
+      {
+        title: 'Macquarie Street',
+        position: [-33.863082, 151.212915]
+      },
+      {
+        title: 'Redfern',
+        position: [-33.892507, 151.201718]
+      },
+      {
+        title: 'Glebe',
+        position: [-33.881128, 151.188318]
+      },
+      {
+        title: 'Rookwood',
+        position: [-33.877729, 151.060903]
+      },
+      {
+        title: 'Darlinghurst',
+        position: [-33.880680, 151.21862]
+      },
+      {
+        title: 'Paddington',
+        position: [-33.884611, 151.226586]
+      },
+      {
+        title: 'Sydney University',
+        position: [-33.888584, 151.187347]
       }
 
     ];

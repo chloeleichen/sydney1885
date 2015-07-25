@@ -42,7 +42,6 @@ main {
   min-height: $height;
 }
 
-
 .content, footer{
     a{
     color: #ea6153;
@@ -51,25 +50,4 @@ main {
     }
   }
 }
-.insClose{
-  cursor: pointer;
-  color: #ea6153;
-}
 
-.ins{
-  background: #fff;
-  width: 50%;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  padding: 0.5rem;
-  opacity: 0.8;
-  display: block;
-  padding-right: 1rem;
-  a{
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}

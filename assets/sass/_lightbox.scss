@@ -1,5 +1,6 @@
 .lightbox{
   position: fixed;
+  z-index: 100;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;

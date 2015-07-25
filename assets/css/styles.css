@@ -9,7 +9,7 @@ main {
   min-height: calc(100vh - 8rem); }
   @media (min-width: 40em) {
     main {
-      margin-top: 4rem; } }
+      margin-top: 5rem; } }
   main h1 {
     margin-top: 0;
     padding-top: 1rem; }
@@ -41,26 +41,6 @@ main {
   color: #ea6153; }
   .content a a:hover, .content a a:focus, footer a a:hover, footer a a:focus {
     color: #f0f0f0; }
-
-.insClose {
-  cursor: pointer;
-  color: #ea6153; }
-
-.ins {
-  background: #fff;
-  width: 50%;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  padding: 0.5rem;
-  opacity: 0.8;
-  display: block;
-  padding-right: 1rem; }
-  .ins a {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0; }
 
 header {
   padding: 1rem 1.5rem; }
@@ -141,6 +121,7 @@ map {
 
 .lightbox {
   position: fixed;
+  z-index: 100;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -202,5 +183,19 @@ map {
   transition: opacity, 0.5s ease-in; }
 .loaded .pre-loader {
   display: none; }
+
+.ins {
+  max-width: 90%;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: -4rem;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  left: 20%; }
+
+.ins-map {
+  left: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

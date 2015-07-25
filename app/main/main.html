@@ -1,19 +1,17 @@
 <div class="clearfix black {{loadState}}">
   <div class="map-wrapper sm-col sm-col-6">
-  <div class="instruction-map ins" ng-hide="showInsMap">
-  Click on a marker on the map to see photos of a specific location
-  <a ng-click="showInsMap=true" class="insClose icon-cross"></a>
-  </div>
-    <map zoom="12" center="-33.870593, 151.206939">
+  <a ng-click="showInsMap=true" ng-hide="showInsMap" class="ins ins-map">
+    <img src="assets/img/ins-map.svg">
+  </a>
+    <map zoom="12" center="-33.870593, 151.206939" scrollwheel="false" streetViewControl="false">
       <marker ng-repeat ="marker in markers" title ="{{marker.title}}" position="{{marker.position}}" on-click="markerClick()">
       </marker>
     </map>
   </div>
   <div class="photo-wrapper sm-col sm-col-6">
-  <div class="instruction-photo ins" ng-hide="showInsPhoto">
-  Click on a photo card to view details
-  <a ng-click="showInsPhoto=true" class="insClose icon-cross"></a>
-  </div>
+  <a ng-click="showInsImg=true" ng-hide="showInsImg" class="ins ins-img">
+    <img src="assets/img/ins-img.svg">
+  </a>
   <div class='pre-loader'><img src="assets/img/blank.svg"></div>
     <ul class="list-reset clearfix">
       <li class="photo-item col col-6 sm-col-6 md-col-4" ng-repeat ="img in imgs | filter:{caption: selectedMarker}">
