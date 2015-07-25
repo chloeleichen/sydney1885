@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
   background-image: url(../img/vintage.jpg);
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  font-family: "Open Sans", sans-serif; }
 
 main {
   min-height: calc(100vh - 8rem); }
@@ -13,7 +15,8 @@ main {
     padding-top: 1rem; }
 
 .photo-wrapper {
-  float: right; }
+  float: right;
+  position: relative; }
 
 .map-wrapper {
   padding: 0 0.5rem; }
@@ -22,6 +25,42 @@ main {
       position: fixed;
       left: 0;
       padding: 0 1rem 0 3rem; } }
+
+.content {
+  padding: 0;
+  min-height: calc(100vh - 8rem); }
+  @media (min-width: 40em) {
+    .content {
+      padding: 1rem 2rem;
+      text-align: center; } }
+  .content h2, .content h3, .content h1 {
+    font-family: "Rokkitt", serif;
+    color: #bdc3c7; }
+
+.content a, footer a {
+  color: #ea6153; }
+  .content a a:hover, .content a a:focus, footer a a:hover, footer a a:focus {
+    color: #f0f0f0; }
+
+.insClose {
+  cursor: pointer;
+  color: #ea6153; }
+
+.ins {
+  background: #fff;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  padding: 0.5rem;
+  opacity: 0.8;
+  display: block;
+  padding-right: 1rem; }
+  .ins a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0; }
 
 header {
   padding: 1rem 1.5rem; }
@@ -144,7 +183,8 @@ map {
   position: fixed;
   top: 0;
   left: 0;
-  background: #000; }
+  background: #000;
+  z-index: 999; }
   .loading .pre-loader img {
     display: block;
     margin: 0 auto;

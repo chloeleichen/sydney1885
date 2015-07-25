@@ -4,9 +4,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>  </title>
-  <meta name="title" content=" " />
-  <meta name="description" content=" "/>
+  <title> Sydney1885 </title>
+  <meta name="title" content=" Sydney1885 " />
+  <meta name="description" content="Street photography of Sydney pre 1885 "/>
+  <meta name="author" content="Chloe Chen">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sydney1885: Street Photos ">
+  <meta name="twitter:description" content="Street photography of Sydney pre 1885">
+  <meta name="twitter:creator" content="@chloeleichen">
+  <link rel="icon"type="image/png" href="favicon.png">
   <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/font.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
@@ -22,21 +29,14 @@
   <script src="app/app.routes.js"></script>
   <script src="app/main/main.js"></script>
   <script src="app/nav/nav.js"></script>
-
 </head>
 <body>
-    <header class="clearfix" ng-include ="'app/nav/nav.html'" ng-controller="navController">
-    </header>
-    <!-- your site's markup --> 
-    <div class="container">
-      <main class="px2 py0 white" ng-view> 
-      </main>
-    </div> <!-- end of container  -->
-
-    <footer class='py2 center white'>
-      <small class="footer-copyright ">
-         
-      </small>
-    </footer>
+  <header class="clearfix" ng-include ="'app/nav/nav.html'" ng-controller="navController">
+  </header>
+  <!-- your site's markup --> 
+  <div class="container">
+    <main class="px2 py0 white" ng-view> 
+    </main>
+  </div> <!-- end of container  -->
 </body>
 </html>

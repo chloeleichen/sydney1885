@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 $header: 4rem;
 $height: calc(100vh - 8rem);
 $font-serif: 'Rokkitt', serif;
+$font-base:'Open Sans', sans-serif;
 $sm: 40em;
 
 @mixin vertical-align {

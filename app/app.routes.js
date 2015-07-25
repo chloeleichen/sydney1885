@@ -7,9 +7,6 @@ oldSydney.config(['$routeProvider', function($routeProvider){
     when('/about', {
       templateUrl: 'app/about/about.html'
     }).
-    when('/contact', {
-      templateUrl: 'app/contact/contact.html'
-    }).
     otherwise({
       redirectTo: '/'
     });

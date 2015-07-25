@@ -1,6 +1,7 @@
 body{
   background-image: url(../img/vintage.jpg);
   background-repeat: repeat;
+  font-family: $font-base;
 }
 
 main {
@@ -17,6 +18,7 @@ main {
 
 .photo-wrapper{
   float: right;
+  position:relative;
 }
 .map-wrapper{
   padding: 0 0.5rem;
@@ -25,4 +27,49 @@ main {
       left: 0;
       padding: 0 1rem 0 3rem;
     }
+}
+
+.content{
+  padding: 0;
+  @media (min-width: $sm){
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  h2, h3, h1{
+    font-family: $font-serif;
+    color: #bdc3c7;
+  }
+  min-height: $height;
+}
+
+
+.content, footer{
+    a{
+    color: #ea6153;
+    a:hover, a:focus{
+      color: #f0f0f0;
+    }
+  }
+}
+.insClose{
+  cursor: pointer;
+  color: #ea6153;
+}
+
+.ins{
+  background: #fff;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  padding: 0.5rem;
+  opacity: 0.8;
+  display: block;
+  padding-right: 1rem;
+  a{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
