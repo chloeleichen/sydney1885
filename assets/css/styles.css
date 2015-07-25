@@ -74,6 +74,7 @@ map {
   @media (min-width: 40em) {
     map {
       height: calc(100vh - 8rem);
+      max-height: 600px;
       margin-bottom: 3rem; } }
 
 .photo-item {

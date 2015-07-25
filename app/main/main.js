@@ -126,7 +126,7 @@
 
     $scope.toggleClick = function(){
       toggleClass();
-      lightboxImg.src = 'assets/img/blank.svg';
+      lightboxImg.src = 'assets/img/empty.svg';
     }
 
     $scope.reset = function(){
