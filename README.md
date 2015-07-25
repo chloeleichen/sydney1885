@@ -1,4 +1,4 @@
-#Sydney 1885 Street photography explorer 
+#Sydney 1885 Street Photography Explorer 
 
 ##What was it like to live in Sydney in 1885?
 
@@ -8,4 +8,5 @@ This project is built with Angular under MIT License
 
 Author: 
 [Chloe](chloechen.io)
+
 Follow me on Twitter: [chloechenlei](https://twitter.com/chloechenlei)
