@@ -1,2 +1,2 @@
-var oldSydney = angular.module('oldSydney', ['ngRoute', 'firebase','appControllers', 'ngMap']);
+var oldSydney = angular.module('oldSydney', ['ngRoute', 'firebase', 'ngMap']);
 
