@@ -18,4 +18,4 @@ For this project I selected part of the collection that are clearly dated and ca
 Author: 
 [Chloe](chloechen.io)
 
-Follow me on Twitter: [chloechenlei](https://twitter.com/chloeleichen)
+Follow me on Twitter: [chloeleichen](https://twitter.com/chloeleichen)
